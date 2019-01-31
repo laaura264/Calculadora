@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="WorkSans-ExtraLight.ttf">
+            <string>WorkSans-ExtraLight</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculadora" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ezZ-Ki-VcS">
+                                <rect key="frame" x="0.0" y="198" width="375" height="469"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="0b8-xO-SEU">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="93"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jR-yR-DTf">
+                                                <rect key="frame" x="0.0" y="0.0" width="93" height="93"/>
+                                                <color key="backgroundColor" red="0.74117647058823533" green="0.76470588235294112" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="7jR-yR-DTf" secondAttribute="height" multiplier="1:1" id="LX5-yG-M2t"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="36"/>
+                                                <state key="normal" title="AC">
+                                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="30"/>
+                                                    <mask key="constraints">
+                                                        <exclude reference="LX5-yG-M2t"/>
+                                                    </mask>
+                                                </variation>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oix-Rj-DcP">
+                                                <rect key="frame" x="94" y="0.0" width="93" height="93"/>
+                                                <color key="backgroundColor" red="0.74117647058823533" green="0.76470588235294112" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="41"/>
+                                                <state key="normal" title="±">
+                                                    <color key="titleColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="30"/>
+                                                </variation>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zb-y9-ktH">
+                                                <rect key="frame" x="188" y="0.0" width="93" height="93"/>
+                                                <color key="backgroundColor" red="0.74117647058823533" green="0.76470588235294112" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="36"/>
+                                                <state key="normal" title="%">
+                                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="30"/>
+                                                </variation>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEo-ye-N2O">
+                                                <rect key="frame" x="282" y="0.0" width="93" height="93"/>
+                                                <color key="backgroundColor" red="0.95294117647058818" green="0.61176470588235299" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="48"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="30"/>
+                                                </variation>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="tDN-S7-HGU">
+                                        <rect key="frame" x="0.0" y="94" width="375" height="93"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aas-Tx-Gjq">
+                                                <rect key="frame" x="0.0" y="0.0" width="93" height="93"/>
+                                                <color key="backgroundColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="aas-Tx-Gjq" secondAttribute="height" multiplier="1:1" id="KJT-rS-L9j"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="48"/>
+                                                <state key="normal" title="7">
+                                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="30"/>
+                                                    <mask key="constraints">
+                                                        <exclude reference="KJT-rS-L9j"/>
+                                                    </mask>
+                                                </variation>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGB-UW-sOj">
+                                                <rect key="frame" x="94" y="0.0" width="93" height="93"/>
+                                                <color key="backgroundColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="48"/>
+                                                <state key="normal" title="8">
+                                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="30"/>
+                                                </variation>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BF4-7G-sJ0">
+                                                <rect key="frame" x="188" y="0.0" width="93" height="93"/>
+                                                <color key="backgroundColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="48"/>
+                                                <state key="normal" title="9">
+                                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="30"/>
+                                                </variation>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5O-t6-kjt">
+                                                <rect key="frame" x="282" y="0.0" width="93" height="93"/>
+                                                <color key="backgroundColor" red="0.95294117649999999" green="0.61176470589999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="48"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="30"/>
+                                                </variation>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="rJV-Xu-uBc">
+                                        <rect key="frame" x="0.0" y="188" width="375" height="93"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLQ-Rr-yXn">
+                                                <rect key="frame" x="0.0" y="0.0" width="93" height="93"/>
+                                                <color key="backgroundColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="HLQ-Rr-yXn" secondAttribute="height" multiplier="1:1" id="2RB-OE-XJT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="48"/>
+                                                <state key="normal" title="4">
+                                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="30"/>
+                                                    <mask key="constraints">
+                                                        <exclude reference="2RB-OE-XJT"/>
+                                                    </mask>
+                                                </variation>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2H-2g-Ex8">
+                                                <rect key="frame" x="94" y="0.0" width="93" height="93"/>
+                                                <color key="backgroundColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="48"/>
+                                                <state key="normal" title="5">
+                                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="30"/>
+                                                </variation>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLk-Rm-qBK">
+                                                <rect key="frame" x="188" y="0.0" width="93" height="93"/>
+                                                <color key="backgroundColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="48"/>
+                                                <state key="normal" title="6">
+                                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="30"/>
+                                                </variation>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6E8-Mr-wj2">
+                                                <rect key="frame" x="282" y="0.0" width="93" height="93"/>
+                                                <color key="backgroundColor" red="0.95294117649999999" green="0.61176470589999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="48"/>
+                                                <state key="normal" title="×">
+                                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="30"/>
+                                                </variation>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="EKZ-0b-eJ0">
+                                        <rect key="frame" x="0.0" y="282" width="375" height="93"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNG-I1-zQz">
+                                                <rect key="frame" x="0.0" y="0.0" width="93" height="93"/>
+                                                <color key="backgroundColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="hNG-I1-zQz" secondAttribute="height" multiplier="1:1" id="dO5-jB-E2z"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="48"/>
+                                                <state key="normal" title="1">
+                                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="30"/>
+                                                    <mask key="constraints">
+                                                        <exclude reference="dO5-jB-E2z"/>
+                                                    </mask>
+                                                </variation>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11P-UK-tMv">
+                                                <rect key="frame" x="94" y="0.0" width="93" height="93"/>
+                                                <color key="backgroundColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="48"/>
+                                                <state key="normal" title="2">
+                                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="30"/>
+                                                </variation>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2U-Wf-z54">
+                                                <rect key="frame" x="188" y="0.0" width="93" height="93"/>
+                                                <color key="backgroundColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="48"/>
+                                                <state key="normal" title="3">
+                                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="30"/>
+                                                </variation>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wG-v5-Qa4">
+                                                <rect key="frame" x="282" y="0.0" width="93" height="93"/>
+                                                <color key="backgroundColor" red="0.95294117649999999" green="0.61176470589999998" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="30"/>
+                                                <state key="normal" title="÷">
+                                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="JGZ-fm-O9h">
+                                        <rect key="frame" x="0.0" y="376" width="375" height="93"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHg-sM-W4g">
+                                                <rect key="frame" x="0.0" y="0.0" width="93" height="93"/>
+                                                <color key="backgroundColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="MHg-sM-W4g" secondAttribute="height" multiplier="1:1" id="kjX-YL-yGF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="48"/>
+                                                <state key="normal" title="0">
+                                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="30"/>
+                                                    <mask key="constraints">
+                                                        <exclude reference="kjX-YL-yGF"/>
+                                                    </mask>
+                                                </variation>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2G-B0-p4w">
+                                                <rect key="frame" x="94" y="0.0" width="93" height="93"/>
+                                                <color key="backgroundColor" red="0.92549019610000005" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="48"/>
+                                                <state key="normal" title=",">
+                                                    <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="30"/>
+                                                </variation>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5K-Hd-2Wu">
+                                                <rect key="frame" x="188" y="0.0" width="187" height="93"/>
+                                                <color key="backgroundColor" red="0.1803921568627451" green="0.80000000000000004" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="64"/>
+                                                <state key="normal" title="=">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="30"/>
+                                                </variation>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="i2G-B0-p4w" firstAttribute="width" secondItem="11P-UK-tMv" secondAttribute="width" id="ach-5p-sMq"/>
+                                    <constraint firstAttribute="height" constant="220" id="iqG-Sf-3Wj"/>
+                                    <constraint firstItem="MHg-sM-W4g" firstAttribute="width" secondItem="hNG-I1-zQz" secondAttribute="width" id="rAT-Cb-SPZ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="iqG-Sf-3Wj"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="iqG-Sf-3Wj"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="Nqm-GX-cF2">
+                                <rect key="frame" x="120" y="104" width="230" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="220" id="Z6E-NS-vEE"/>
+                                    <constraint firstAttribute="height" constant="84" id="wB8-KQ-Mxv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="72"/>
+                                <color key="textColor" red="0.81176470588235294" green="0.81176470588235294" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Z6E-NS-vEE"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Z6E-NS-vEE"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="8qw-3G-1zc">
+                                <rect key="frame" x="276" y="30" width="89" height="20"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="op-suma" translatesAutoresizingMaskIntoConstraints="NO" id="Mqn-S8-Zco">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="XbJ-ak-dPp"/>
+                                            <constraint firstAttribute="width" constant="20" id="jD5-yM-0F0"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="op-resta" translatesAutoresizingMaskIntoConstraints="NO" id="de5-Yf-ZVc">
+                                        <rect key="frame" x="23" y="0.0" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="0yQ-fb-gvV"/>
+                                            <constraint firstAttribute="height" constant="20" id="ORa-RG-vCe"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="op-multiplica" translatesAutoresizingMaskIntoConstraints="NO" id="Z93-jw-zUy">
+                                        <rect key="frame" x="46" y="0.0" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="4kR-kl-1OO"/>
+                                            <constraint firstAttribute="width" constant="20" id="rF5-QA-Wb4"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="op-divide" translatesAutoresizingMaskIntoConstraints="NO" id="5de-Ck-fuk">
+                                        <rect key="frame" x="69" y="0.0" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="LEu-xF-gc8"/>
+                                            <constraint firstAttribute="height" constant="20" id="fVH-rx-xnr"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ezZ-Ki-VcS" firstAttribute="top" secondItem="Nqm-GX-cF2" secondAttribute="bottom" constant="10" id="1aL-VR-xg9"/>
+                            <constraint firstItem="8qw-3G-1zc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="35P-ZT-ir8"/>
+                            <constraint firstItem="ezZ-Ki-VcS" firstAttribute="top" secondItem="8qw-3G-1zc" secondAttribute="bottom" constant="125" id="3vi-0c-Pvs">
+                                <variation key="heightClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="8qw-3G-1zc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="C6O-t2-rLm"/>
+                            <constraint firstItem="ezZ-Ki-VcS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Lgk-87-SKU"/>
+                            <constraint firstItem="Nqm-GX-cF2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="byg-zy-SbP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nqm-GX-cF2" secondAttribute="trailing" constant="25" id="fxx-d3-4RZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8qw-3G-1zc" secondAttribute="trailing" constant="10" id="ixf-9q-tzp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ezZ-Ki-VcS" secondAttribute="trailing" id="qAA-UP-m78"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ezZ-Ki-VcS" secondAttribute="bottom" id="sXZ-0P-9u2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3vi-0c-Pvs"/>
+                                <exclude reference="35P-ZT-ir8"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="ixf-9q-tzp"/>
+                                <include reference="3vi-0c-Pvs"/>
+                                <include reference="35P-ZT-ir8"/>
+                                <exclude reference="C6O-t2-rLm"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="50.824587706146929"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="op-divide" width="20" height="20"/>
+        <image name="op-multiplica" width="20" height="20"/>
+        <image name="op-resta" width="20" height="20"/>
+        <image name="op-suma" width="20" height="20"/>
+    </resources>
+</document>
